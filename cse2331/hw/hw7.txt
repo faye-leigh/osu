@@ -1,0 +1,50 @@
+CSE 2331 Homework 7
+1. Recall the height of a tree is the maximum number of edges among all root-to-leaf
+paths. What are the minimum and maximum numbers of elements of a heap of height
+h?
+2. Argue that for any subtree of a (max) heap, a maximum element occurs at its root.
+3. Let H be an array with the (max) heap property. Characterize the range of elements
+where the minimum value must occur. In other words, what is the smallest range of
+indices where, if checked, one is gauranteed to find the minimum.
+4. Assume the array xs[0, . . . , n−1] encodes a heap with at most one node in violation of the
+(max) heap property. Explain the purpose, function, and correctness of the procedure
+MaxHeapify assuming node i’s children are valid (max) heaps. Do the leaves ever need
+heapified? In lecture, MaxHeapify was presented as part of HeapExtractMax.
+    1 def max_heapify(xs, i, n):
+    2 while True:
+    3 li = left(i)
+    4 ri = right(i)
+    5
+    6 maxi = i
+    7 if li < n and xs[li] > xs[maxi]:
+    8 maxi = li
+    9
+    10 if ri < n and xs[ri] > xs[maxi]:
+    11 maxi = ri
+    12
+    13 if maxi == i:
+    14 break
+    15
+    16 swap(xs, i, maxi)
+    17 i = maxi
+5. Let xs be an unsorted array. The procedure BuildMaxHeap converts an unsorted
+array to an a heap. Explain why it works.
+    1 def build_max_heap(xs):
+    2 n = len(xs)
+    3 for i in reversed(range(0,n//2)):
+    4 max_heapify(xs, i, n)
+6. Explain HeapSort.
+    1
+    1 def heap_sort(xs):
+    2 build_max_heap(xs)
+    3 n = len(xs)
+    4 for i in reversed(range(0,n)):
+    5 swap(xs,0,i)
+    6 max_heapify(xs, 0, i)
+7. Argue that if a binary search tree node has two children then its successor has no left
+child and its predecessor has no right child.
+8. Argue that the in order walk on n-node binary search trees, performed by starting with
+TreeMin followed by repeatedly calling TreeSuccessor runs in Θ(n)-time.
+9. How are the binary search tree property and max heap property different? Can the
+max heap property be used to print keys in sorted order in linear time? Why or why
+not?
