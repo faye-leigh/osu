@@ -1,0 +1,104 @@
+f1()
+{
+    int i = 4;
+    foo(&i);
+}
+
+assembly:
+
+f1:
+    pushq   %rbp
+    movq    %rbp, %rsp
+    subq    16, %rsp
+    movl    $4, -16(%rbp)
+    leaq    -16(%rbp), %rdi
+    call    foo
+
+long count(struct Node *ptr)
+{
+    long rval = 0;
+
+    if(ptr)
+    {
+        rval = 1;
+        rval += count(ptr->left);
+        rval += count(ptr->right);
+    }
+    return rval;
+}
+
+count:
+    pushq   %rbp
+    movq    %rbp, %rsp
+
+    testq   %rdi, %rdi
+    jz      
+
+    leave
+    ret
+
+long fx(seven longs)
+{
+    long rval;
+    rva; = p1 + p7; p7 in stack at 16 past rbp
+    return rval;
+}
+
+long:
+movq    %rdi, %rax
+addq    16(%rbp), %rax
+
+void inc(int *ip)
+{
+    *ip += 1; inc memory at ip
+}
+
+inc:
+    addl    $1, (%rdi)
+
+void inc(int *ip)
+{
+    *ip++ += 1; inc memory at ip
+}
+
+inc:
+    addl    $1, (%rdi)
+    addq    $4, %rdi # pointers to int increment by 4
+
+struct Recod {
+    char name[15]; add 1
+    short scores[2][6]; offset 16, 12 * 2  bytes, 24 bytes + 16 = 40 bytes
+    int win (offset 40), loss (offset 44), tie (offset 48, end 52) # no padding since 52 suitable for ints
+} # length = 52
+
+void fx(struct Record *ptr)
+{
+    int i, *ip;
+    short *sp;
+
+    i = ptr->win;               movl    40(%rdi, %esi)
+    ip = &ptr->tie;             leaq    48(%rdi), %rdx
+
+    i = ptr-scores[0][3];       movswl  22(%rdi), %esi      #   16 (scores) + 6 ([3]) = 22 offset
+    sp = &ptr->scores[1][1];    leaq    16(%rdi), %rcx      #   16 (scores) + 12 ([1] column) + 2 ([1] row) = 30 offset
+}
+
+wtest(char *bytePointer, long count)
+{
+    while(count)
+    {
+        count--;
+        bytePointer[count] = 0;
+    }
+}
+ 
+jmp loop_test
+loop_body:
+    decq    %rsi
+    movb    $0, (%rdi, %rsi, 1)
+loop_test:
+    testq   %rsi, %rsi
+    jnz loop_body
+
+unsigned => above/below
+2's complement => greater/lesser
