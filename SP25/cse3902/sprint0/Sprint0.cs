@@ -2,49 +2,54 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
-namespace my_monogame_project
+public class Game1 : Game
 {
-    public class Game1 : Game
+    private GraphicsDeviceManager _graphics;
+    private SpriteBatch _spriteBatch;
+
+    private ISprite _currentSprite;
+    private IController _controller;
+
+    public Game1()
     {
-        private GraphicsDeviceManager _graphics;
-        private SpriteBatch _spriteBatch;
+        _graphics = new GraphicsDeviceManager(this);
+        Content.RootDirectory = "Content";
+    }
 
-        public Game1()
-        {
-            _graphics = new GraphicsDeviceManager(this);
-            Content.RootDirectory = "Content";
-        }
+    protected override void Initialize()
+    {
+        // Initialize controller and sprite
+        _controller = new KeyboardController();
+        _currentSprite = new NonMovingNonAnimatedSprite();
 
-        protected override void Initialize()
-        {
-            // Initialize game components here
-            base.Initialize();
-        }
+        base.Initialize();
+    }
 
-        protected override void LoadContent()
-        {
-            _spriteBatch = new SpriteBatch(GraphicsDevice);
-            // Load game content here
-        }
+    protected override void LoadContent()
+    {
+        _spriteBatch = new SpriteBatch(GraphicsDevice);
+        // Load sprite assets here
+    }
 
-        protected override void Update(GameTime gameTime)
-        {
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || 
-                Keyboard.GetState().IsKeyDown(Keys.Escape))
-                Exit();
+    protected override void Update(GameTime gameTime)
+    {
+        if (Keyboard.GetState().IsKeyDown(Keys.Escape))
+            Exit();
 
-            // Update game logic here
+        // Handle user input
+        _controller.HandleInput(ref _currentSprite);
 
-            base.Update(gameTime);
-        }
+        base.Update(gameTime);
+    }
 
-        protected override void Draw(GameTime gameTime)
-        {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+    protected override void Draw(GameTime gameTime)
+    {
+        GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            // Draw game content here
+        _spriteBatch.Begin();
+        _currentSprite.Draw(_spriteBatch);
+        _spriteBatch.End();
 
-            base.Draw(gameTime);
-        }
+        base.Draw(gameTime);
     }
 }

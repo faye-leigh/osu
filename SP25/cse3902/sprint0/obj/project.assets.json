@@ -1,39 +1,46 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net5.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": [
+    "net5.0": [
       "MonoGame.Framework >= 3.8.0"
     ]
   },
   "packageFolders": {
-    "/home/faye/.nuget/packages/": {}
+    "C:\\Users\\faye\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/faye/osu/SP25/cse3902/sprint0/sprint0.csproj",
-      "projectName": "my-monogame-project",
-      "projectPath": "/home/faye/osu/SP25/cse3902/sprint0/sprint0.csproj",
-      "packagesPath": "/home/faye/.nuget/packages/",
-      "outputPath": "/home/faye/osu/SP25/cse3902/sprint0/obj/",
+      "projectUniqueName": "C:\\Users\\faye\\Documents\\sprint0\\my-monogame-project\\MyMonoGameProject.csproj",
+      "projectName": "MyMonoGameProject",
+      "projectPath": "C:\\Users\\faye\\Documents\\sprint0\\my-monogame-project\\MyMonoGameProject.csproj",
+      "packagesPath": "C:\\Users\\faye\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\faye\\Documents\\sprint0\\my-monogame-project\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/faye/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\faye\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net5.0"
       ],
       "sources": {
-        "/usr/lib64/dotnet/library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net5.0": {
+          "targetAlias": "net5.0",
           "projectReferences": {}
         }
       },
@@ -50,8 +57,8 @@
       "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net5.0": {
+        "targetAlias": "net5.0",
         "dependencies": {
           "MonoGame.Framework": {
             "target": "Package",
@@ -72,15 +79,19 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.36, 6.0.36]"
+            "version": "[5.0.0, 5.0.0]"
           },
           {
-            "name": "Microsoft.NETCore.App.Host.linux-x64",
-            "version": "[6.0.36, 6.0.36]"
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[5.0.17, 5.0.17]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.36, 6.0.36]"
+            "version": "[5.0.0, 5.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
           }
         ],
         "frameworkReferences": {
@@ -88,7 +99,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/9.0.101/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   },
@@ -96,10 +107,10 @@
     {
       "code": "NU1101",
       "level": "Error",
-      "message": "Unable to find package MonoGame.Framework. No packages exist with this id in source(s): /usr/lib64/dotnet/library-packs, nuget.org",
+      "message": "Unable to find package MonoGame.Framework. No packages exist with this id in source(s): C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org",
       "libraryId": "MonoGame.Framework",
       "targetGraphs": [
-        "net6.0"
+        "net5.0"
       ]
     }
   ]

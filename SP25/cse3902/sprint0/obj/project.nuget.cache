@@ -1,21 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "iA6pnW/9MQs=",
+  "dgSpecHash": "OnyNQ9eaJsA=",
   "success": false,
-  "projectFilePath": "/home/faye/osu/SP25/cse3902/sprint0/sprint0.csproj",
+  "projectFilePath": "C:\\Users\\faye\\Documents\\sprint0\\my-monogame-project\\MyMonoGameProject.csproj",
   "expectedPackageFiles": [
-    "/home/faye/.nuget/packages/microsoft.netcore.app.ref/6.0.36/microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
-    "/home/faye/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
-    "/home/faye/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.36/microsoft.netcore.app.host.linux-x64.6.0.36.nupkg.sha512"
+    "C:\\Users\\faye\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\faye\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\faye\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\faye\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
   ],
   "logs": [
     {
       "code": "NU1101",
       "level": "Error",
-      "message": "Unable to find package MonoGame.Framework. No packages exist with this id in source(s): /usr/lib64/dotnet/library-packs, nuget.org",
+      "message": "Unable to find package MonoGame.Framework. No packages exist with this id in source(s): C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org",
       "libraryId": "MonoGame.Framework",
       "targetGraphs": [
-        "net6.0"
+        "net5.0"
       ]
     }
   ]
