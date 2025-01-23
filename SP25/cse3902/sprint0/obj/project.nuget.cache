@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "iA6pnW/9MQs=",
+  "success": false,
+  "projectFilePath": "/home/faye/osu/SP25/cse3902/sprint0/sprint0.csproj",
+  "expectedPackageFiles": [
+    "/home/faye/.nuget/packages/microsoft.netcore.app.ref/6.0.36/microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "/home/faye/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
+    "/home/faye/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.36/microsoft.netcore.app.host.linux-x64.6.0.36.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package MonoGame.Framework. No packages exist with this id in source(s): /usr/lib64/dotnet/library-packs, nuget.org",
+      "libraryId": "MonoGame.Framework",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

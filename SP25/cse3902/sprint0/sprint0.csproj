@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>my_monogame_project</RootNamespace>
+    <AssemblyName>my-monogame-project</AssemblyName>
+    <MonoGameContentBuilder>True</MonoGameContentBuilder>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Framework" Version="3.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Content\Content.mgcb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
