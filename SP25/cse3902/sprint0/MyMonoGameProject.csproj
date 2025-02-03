@@ -1,5 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
+<<<<<<< HEAD:SP25/cse3902/sprint0/sprint0.csproj
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
     <RollForward>Major</RollForward>
@@ -9,18 +10,29 @@
   <PropertyGroup>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <ApplicationIcon>Icon.ico</ApplicationIcon>
+=======
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>MyMonoGameProject</RootNamespace>
+    <AssemblyName>MyMonoGameProject</AssemblyName>
+    <MonoGameContentBuilder>True</MonoGameContentBuilder>
+>>>>>>> eebefdd5cd3b1259d16ca47fcff95c206be8c88f:SP25/cse3902/sprint0/MyMonoGameProject.csproj
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Icon.ico" />
     <None Remove="Icon.bmp" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD:SP25/cse3902/sprint0/sprint0.csproj
     <EmbeddedResource Include="Icon.ico">
       <LogicalName>Icon.ico</LogicalName>
     </EmbeddedResource>
     <EmbeddedResource Include="Icon.bmp">
       <LogicalName>Icon.bmp</LogicalName>
     </EmbeddedResource>
+=======
+    <Content Include="Content\**\*.*" />
+>>>>>>> eebefdd5cd3b1259d16ca47fcff95c206be8c88f:SP25/cse3902/sprint0/MyMonoGameProject.csproj
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.2.1105" />
