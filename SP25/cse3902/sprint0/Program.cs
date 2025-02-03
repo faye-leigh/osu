@@ -1,14 +1,2 @@
-using Microsoft.Xna.Framework;
-
-namespace my_monogame_project
-{
-    public static class Program
-    {
-        [STAThread]
-        static void Main()
-        {
-            using (var game = new Game1())
-                game.Run();
-        }
-    }
-}
+﻿using var game = new sprint0.Sprint0();
+game.Run();

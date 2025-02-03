@@ -1,0 +1,4 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/faye/source/repos/sprint0/Content/CatSpriteSheet.png","C:/Users/faye/source/repos/sprint0/Content/bin/DesktopGL/CatSpriteSheet.xnb","TextureProcessor","Texture2DContent",39148,12373,0.0646151
+"C:/Users/faye/source/repos/sprint0/Content/CatSpriteSheet2.png","C:/Users/faye/source/repos/sprint0/Content/bin/DesktopGL/CatSpriteSheet2.xnb","TextureProcessor","Texture2DContent",39148,327765,0.0204221
+"C:/Users/faye/source/repos/sprint0/Content/File.spritefont","C:/Users/faye/source/repos/sprint0/Content/bin/DesktopGL/File.xnb","FontDescriptionProcessor","SpriteFontContent",2065,21538,0.1074356
