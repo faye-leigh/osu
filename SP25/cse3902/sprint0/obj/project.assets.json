@@ -1,7 +1,6 @@
 {
   "version": 3,
   "targets": {
-<<<<<<< HEAD
     "net8.0": {
       "MonoGame.Content.Builder.Task/3.8.2.1105": {
         "type": "package",
@@ -231,52 +230,29 @@
         "version.txt"
       ]
     }
-=======
-    "net5.0": {}
->>>>>>> eebefdd5cd3b1259d16ca47fcff95c206be8c88f
   },
   "projectFileDependencyGroups": {
-<<<<<<< HEAD
     "net8.0": [
       "MonoGame.Content.Builder.Task >= 3.8.2.1105",
       "MonoGame.Framework.DesktopGL >= 3.8.2.1105"
-=======
-    "net5.0": [
-      "MonoGame.Framework >= 3.8.0"
->>>>>>> eebefdd5cd3b1259d16ca47fcff95c206be8c88f
     ]
   },
   "packageFolders": {
-    "C:\\Users\\faye\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/home/faye/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "/home/faye/osu/SP25/cse3902/sprint0/sprint0.csproj",
       "projectName": "sprint0",
       "projectPath": "/home/faye/osu/SP25/cse3902/sprint0/sprint0.csproj",
       "packagesPath": "/home/faye/.nuget/packages/",
       "outputPath": "/home/faye/osu/SP25/cse3902/sprint0/obj/",
-=======
-      "projectUniqueName": "C:\\Users\\faye\\Documents\\sprint0\\my-monogame-project\\MyMonoGameProject.csproj",
-      "projectName": "MyMonoGameProject",
-      "projectPath": "C:\\Users\\faye\\Documents\\sprint0\\my-monogame-project\\MyMonoGameProject.csproj",
-      "packagesPath": "C:\\Users\\faye\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\faye\\Documents\\sprint0\\my-monogame-project\\obj\\",
->>>>>>> eebefdd5cd3b1259d16ca47fcff95c206be8c88f
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\faye\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/faye/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-<<<<<<< HEAD
         "net8.0"
       ],
       "sources": {
@@ -285,18 +261,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-=======
-        "net5.0"
-      ],
-      "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {}
-      },
-      "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
->>>>>>> eebefdd5cd3b1259d16ca47fcff95c206be8c88f
           "projectReferences": {}
         }
       },
@@ -307,13 +271,8 @@
       }
     },
     "frameworks": {
-<<<<<<< HEAD
       "net8.0": {
         "targetAlias": "net8.0",
-=======
-      "net5.0": {
-        "targetAlias": "net5.0",
->>>>>>> eebefdd5cd3b1259d16ca47fcff95c206be8c88f
         "dependencies": {
           "MonoGame.Content.Builder.Task": {
             "target": "Package",
@@ -335,52 +294,13 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-<<<<<<< HEAD
-=======
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[5.0.17, 5.0.17]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          }
-        ],
->>>>>>> eebefdd5cd3b1259d16ca47fcff95c206be8c88f
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.111/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\RuntimeIdentifierGraph.json"
-      }
-    }
-  },
-  "logs": [
-    {
-      "code": "NU1101",
-      "level": "Error",
-      "message": "Unable to find package MonoGame.Framework. No packages exist with this id in source(s): C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org",
-      "libraryId": "MonoGame.Framework",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
->>>>>>> eebefdd5cd3b1259d16ca47fcff95c206be8c88f
 }

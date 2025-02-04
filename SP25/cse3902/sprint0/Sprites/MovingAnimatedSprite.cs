@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -50,17 +49,3 @@ namespace sprint0.Sprites
         }
     }
 }
-=======
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Sprint0.Sprites
-{
-    internal class MovingAnimatedSprite
-    {
-    }
-}
->>>>>>> eebefdd5cd3b1259d16ca47fcff95c206be8c88f

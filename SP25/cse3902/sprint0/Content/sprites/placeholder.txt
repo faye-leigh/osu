@@ -1,1 +1,0 @@
-This file is a placeholder for sprite assets. It may contain references or paths to actual sprite images used in the game.
